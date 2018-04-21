@@ -1,0 +1,26 @@
+<!-- consider copying the whole content of this file too show the calendar app on your product -->
+<!-- current deployment base href: https://atcalendarstatic.arzttermine.de/v2/index.html -->
+<!DOCTYPE html>
+<html dir="ltr" lang="de" xml:lang="de" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Witchiwidget</title>
+        <base href="/">
+        <meta charset="utf-8">
+        <meta name="content-type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel=“dns-prefetch“ href="//fonts.googleapis.com" />
+        <link rel=“dns-prefetch“ href="//fonts.gstatic.com" />
+    </head>
+    <body class="at-designer-ns">
+        <at-widget-designer> // here the new designer widget is loaded
+            Loading ...
+        </at-widget-designer>
+
+        <script type="text/javascript">
+            window.at_practice = 2; // 2 can be used for testing purpose
+            window.at_token = "d2lkZ2V0LWJvb2tpbmctY2xpZW50Om9mZmljaWFsLWNsaWVudA==";
+        </script>
+        <!-- we are using the iframe integration of our widget. Remove -iframe if you do not want to use iframe -->
+        <script id="atwidget_script" src="https://widget.arzttermine.de/widget-iframe.js"></script> // here the regular alread existing widget loads
+    </body>
+</html>

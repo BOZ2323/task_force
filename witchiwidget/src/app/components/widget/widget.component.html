@@ -1,0 +1,96 @@
+<!-- BUTTONS & INPUTS -->
+<!-- Primary Background -->
+
+<p>
+  <input type="file" id="myFile">
+</p>
+<p>
+  <button onclick="myFunction()">Änderungen speichern</button>
+</p>
+<!-- <script>
+  function myFunction() {
+      var x = document.getElementById("myFile");
+      x.disabled = true;
+  }
+</script> -->
+
+<!-- <script>
+  function myFunction() {
+      document.getElementById("myFile").innerHTML = "Hello World";
+      console.log("geht doch");
+  }
+</script>
+-->
+
+
+
+<script>
+document.getElementById("myFile").addEventListener("click", function(){
+  document.getElementById("demo").innerHTML = "Hello World";
+});
+</script>
+
+
+<!-- <div id="checkAllTopicCheckBoxes"> </div>
+
+<script>
+  document.getElementById("checkAllTopicCheckBoxes").addEventListener("click", myFunction, false);
+
+  function myFunction() {
+      alert("Hello! I am an alert box!!");
+  }
+</script>
+-->
+
+<form (change)="themeChange.next(theme)">
+  <div class="bg">
+      <label>Primary Background:</label>
+      <br />
+      <input type="color" name="primaryBackground" [(ngModel)]="theme.primaryBackground" />
+      <button type="submit">color</button>
+  </div>
+  <!-- Primary Color -->
+  <div class="bg">
+      <label>Primary Color:</label>
+      <br/>
+      <input type="color" name="primaryBackground" [(ngModel)]="theme.primaryColor" />
+      <button type="submit">color</button>
+  </div>
+  <!-- Primary Fontsize -->
+  <div class="bg">
+      <form action="/action_page.php">
+          Fontsize:
+          <br />
+          <input type="number" name="quantity" min="8" max="14">
+          <input type="submit">
+      </form>
+  </div>
+  <!-- Fontfamily -->
+  <div class="bg">
+
+      <label>Fontfamily:</label>
+      <br />
+      <select>
+          <option value="arial">Arial</option>
+          <option value="roboto">Roboto</option>
+          <option value="univers">Univers</option>
+          <option value="quay">Quay</option>
+      </select>
+
+  </div>
+  <!-- Button Background Color -->
+  <div class="bg">
+      <label>Button Background:</label>
+      <br/>
+      <input type="color" name="primaryBackground" [(ngModel)]="theme.primaryBackground" />
+      <button type="submit">color</button>
+  </div>
+  <!-- Button Color -->
+  <div class="bg">
+      <label>Button Background Color:</label>
+      <br/>
+      <input type="color" name="primaryBackground" [(ngModel)]="theme.primaryBackground" />
+      <button type="submit">color</button>
+  </div>
+
+</form>
